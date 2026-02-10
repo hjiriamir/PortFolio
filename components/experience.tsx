@@ -1,5 +1,32 @@
 export default function Experience() {
   const experiences = [
+    {
+      period: "Novembre 2025 - Janvier 2026",
+      company: "Freelance | Projet personnel",
+      role: "Développeur Full Stack - Auto-Marketplace",
+      description: [
+        "Développement d'une plateforme web complète pour l'achat et la vente de véhicules.",
+        "Conception et développement d'APIs REST avec Node.js et Express pour la gestion des annonces.",
+        "Mise en place d'une authentification sécurisée (JWT) avec gestion des rôles utilisateur/administrateur.",
+        "Création de dashboards utilisateur et administrateur avec React et Next.js.",
+        "Intégration de Cloudinary pour le stockage et la gestion des images des véhicules.",
+        "Implémentation d'un système de filtrage avancé (marque, prix, année, etc.).",
+      ],
+      technologies: ["React", "Next.js", "Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Git"],
+    },
+    {
+      period: "Août - Octobre 2025",
+      company: "Freelance | Client international",
+      role: "Développeur Full Stack - Site Web de livraisons",
+      description: [
+        "Développement d'une application web de gestion de livraisons pour un client basé au Luxembourg.",
+        "Création d'APIs REST sécurisées avec Node.js et Express.",
+        "Développement de l'interface utilisateur avec React pour le suivi des commandes.",
+        "Conception et optimisation de la base de données MySQL.",
+        "Travail en méthodologie Agile avec le client et respect des bonnes pratiques (clean code, sécurité).",
+      ],
+      technologies: ["React", "Node.js", "Express", "MySQL", "JWT", "REST APIs", "Git"],
+    },
     
     {
       period: "Janvier - Septembre 2025",

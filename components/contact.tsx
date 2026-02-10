@@ -34,12 +34,26 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-[#FFD700]" />
                     <div>
                       <p className="font-semibold text-white mb-1">Email</p>
-                      <a
-                        href="mailto:amir.hjiri@esprit.tn"
-                        className="text-gray-300 hover:text-[#FFD700] transition-colors"
-                      >
-                        amir.hjiri@esprit.tn
-                      </a>
+                      <div className="flex flex-wrap items-center gap-3 text-gray-300 text-sm">
+  <a
+    href="mailto:amir.hjiri@esprit.tn"
+    className="flex items-center gap-2 hover:text-[#FFD700] transition-colors"
+  >
+    <span className="text-[#FFD700]">@</span>
+    amir.hjiri@esprit.tn
+  </a>
+
+  <span className="text-gray-500 hidden sm:inline">|</span>
+
+  <a
+    href="mailto:amirhjiri3@gmail.com"
+    className="flex items-center gap-2 hover:text-[#FFD700] transition-colors"
+  >
+    <span className="text-[#FFD700]">@</span>
+    amirhjiri3@gmail.com
+  </a>
+</div>
+
                     </div>
                   </div>
                 </CardContent>

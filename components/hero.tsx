@@ -27,14 +27,14 @@ export default function Hero() {
           {/* Title */}
           <div className="border-l-4 border-primary pl-4">
             <h2 className="text-2xl font-semibold text-card sm:text-3xl lg:text-4xl">
-              Développeur Full-Stack
+            Junior Full Stack Developer
             </h2>
           </div>
 
           <p className="text-lg text-card leading-relaxed">
-  Ingénieur en génie logiciel passionné par le développement web moderne et l'<span className="font-semibold">intelligence artificielle (IA)</span>. 
-  Je crée des applications complètes, du backend avec <span className="font-semibold">Node.js/Express.js</span> ou <span className="font-semibold">Spring Boot</span>   aux interfaces performantes avec <span className="font-semibold">React.js/Next.js</span> ou <span className="font-semibold">Angular</span>, 
-  le tout soutenu par des pratiques <span className="font-semibold">DevOps</span> solides.
+  <span className="font-semibold">Développeur Full Stack Junior</span>, passionné par la création d'applications web modernes et performantes.
+  Je développe actuellement des applications complètes avec <span className="font-semibold">React.js, Next.js, Node.js et Express.js</span>, en mettant un accent particulier sur la conception d'<span className="font-semibold">APIs REST robustes</span> et sécurisées.
+  Je recherche mon premier poste où je pourrai contribuer à des projets concrets et continuer à progresser aux côtés d'une équipe.
 </p>
 
 
@@ -89,13 +89,16 @@ export default function Hero() {
       {/* Right side - Image */}
       <div className="relative flex-1 bg-muted">
         <div className="relative h-full min-h-[400px] lg:min-h-full">
-          <Image
-            src="/amir3.jpeg"
-            alt="Portrait professionnel d'Amir"
-            fill
-            className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-            priority
-          />
+        <Image
+  src="/amir4.jfif"
+  alt="Portrait professionnel d'Amir"
+  fill
+  className="object-cover object-[50%_30%] grayscale hover:grayscale-0 transition-all duration-500"
+  priority
+/>
+
+    
+
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent lg:bg-gradient-to-l" />
         </div>

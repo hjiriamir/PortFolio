@@ -1,44 +1,20 @@
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Langages",
-      skills: ["JavaScript", "TypeScript", "Java", "PHP", "C#", "Python"],
-    },
-    {
       title: "Frontend",
-      skills: ["React", "Next.js", "Angular", "Bootstrap", "Tailwind CSS", "HTML5", "CSS3"],
+      skills: ["React", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"],
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express", "Spring Boot", "Symfony", ".NET"],
+      title: "Backend & APIs",
+      skills: ["Node.js", "Express.js", "REST APIs", "JWT", "Authentication"],
     },
     {
       title: "Bases de données",
-      skills: ["MySQL", "MongoDB", "SQL Server"],
+      skills: ["MongoDB", "MySQL", "PostgreSQL", "SQL"],
     },
     {
-      title: "DevOps & Outils",
-      skills: ["Docker", "Jenkins", "Kubernetes", "Git", "SonarQube", "Nexus"],
-    },
-    {
-      title: "Data & ETL",
-      skills: ["Talend Open Studio", "PowerBI", "Prometheus", "Grafana", "FileZilla"],
-    },
-    {
-      title: "Intelligence Artificielle",
-      skills: ["Scikit-learn", "XGBoost", "Random Forest"],
-    },
-    {
-      title: "Tests & QA",
-      skills: ["JUnit", "Mockito", "Postman"],
-    },
-    {
-      title: "Paiements & APIs",
-      skills: ["Stripe", "Cloudinary", "Leaflet"],
-    },
-    {
-      title: "Méthodologies",
-      skills: ["Agile", "Scrum", "Kanban", "CI/CD"],
+      title: "Outils & Méthodes",
+      skills: ["Git & GitHub", "Docker", "Agile/Scrum", "VS Code", "Postman"],
     },
   ]
 
@@ -49,7 +25,7 @@ export default function Skills() {
           MES <span className="text-[#FFD700]">COMPÉTENCES</span>
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {skillCategories.map((category, index) => (
             <div
               key={index}
@@ -70,6 +46,21 @@ export default function Skills() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Section "Autres compétences" discrète */}
+        <div className="mt-12 pt-8 border-t border-gray-800">
+          <h3 className="mb-4 text-lg font-semibold text-gray-300">Autres compétences</h3>
+          <div className="flex flex-wrap gap-2">
+            {["Java", "Spring Boot", "Symfony", "Angular", "Python", ".NET"].map((skill, i) => (
+              <span
+                key={i}
+                className="bg-gray-800 border border-gray-700 px-3 py-1 text-xs text-gray-400 cursor-default"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
