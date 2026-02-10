@@ -1,40 +1,53 @@
-export function About() {
+export default function About() {
   return (
-    <section id="about" className="py-20 px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-foreground mb-12">À propos</h2>
+    <section id="apropos" className="bg-[#0f0f0f] py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-16">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left column - Text content */}
+          <div>
+            <h2 className="mb-6 text-3xl font-bold text-white lg:text-4xl">
+              À <span className="text-[#FFD700]">PROPOS</span>
+            </h2>
+            <div className="space-y-4 text-base leading-relaxed text-gray-300 lg:text-lg">
+              <p>
+                Je suis <strong className="text-white">Amir, Développeur Full Stack Junior</strong>, passionné par la création d'applications web modernes de A à Z.
+                Mon expérience à travers des projets concrets et du freelance m'a permis de me spécialiser dans le développement avec <strong className="text-white">React.js, Next.js, Node.js et Express.js</strong>.
+              </p>
+              <p>
+                J'accorde une importance particulière à la conception d'<strong className="text-white">APIs REST robustes et sécurisées</strong>, ainsi qu'à l'expérience utilisateur.
+                Je travaille avec des bases de données <strong className="text-white">SQL (PostgreSQL, MySQL) et NoSQL (MongoDB)</strong>, et je maîtrise les outils essentiels comme Git et les méthodologies Agile.
+              </p>
+              <p>
+                Curieux et autonome, j'aime résoudre des problèmes techniques concrets et apprendre continuellement.
+                Je recherche actuellement mon <strong className="text-[#FFD700]">premier poste en tant que Junior Full Stack ou Backend Developer</strong> pour intégrer une équipe dynamique, contribuer à des projets stimulants et monter en compétences.
+              </p>
+            </div>
+          </div>
 
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-          <p className="text-pretty">
-          Bonjour ! Je suis un Ingénieur en génie logiciel, passionné par le développement web full-stack et 
-          les technologies émergentes. Mon parcours m'a permis de maîtriser Java, PHP, JavaScript et TypeScript, 
-          ainsi que des frameworks modernes tels que Spring Boot, Angular, Node.js, Express, React/Next.js. 
-          Je possède également une expérience en Python, ce qui me permet d'aborder des projets variés, allant 
-          du développement web aux solutions backend et à l'automatisation.
-          </p>
-
-          <p className="text-pretty">
-            J'ai également travaillé sur des projets DevOps, utilisant Docker et Jenkins pour automatiser les
-            déploiements. Cette expérience m'a permis de comprendre l'importance de l'intégration continue et du
-            déploiement continu dans le développement moderne.
-          </p>
-
-          <p className="text-pretty">
-            Passionné par le travail en équipe, je suis motivé à contribuer à des projets concrets qui ont un impact
-            réel. Mon objectif est de continuer à développer mes compétences techniques et professionnelles tout en
-            apportant de la valeur aux équipes avec lesquelles je collabore.
-          </p>
-
-          <p className="text-pretty">
-          Actuellement, je travaille sur mon projet de fin d'études : un Smart Store intelligent qui utilise 
-          l'intelligence artificielle pour optimiser la gestion des magasins. Mon projet vise à améliorer 
-          la planification d’espace, gérer efficacement les catégories de produits et générer automatiquement 
-          des planogrammes adaptés à chaque magasin. Il permet également de prédire les planogrammes, 
-          de faciliter la gestion des tâches retail et de renforcer la collaboration entre les équipes, 
-          afin de maximiser la rentabilité et d’offrir une meilleure expérience client. Ce projet combine 
-          mes compétences en développement web full-stack (Node.js, React) avec l’IA et l’analyse de données, 
-          pour créer une solution complète et intelligente adaptée aux besoins du commerce de détail.
-          </p>
+          {/* Right column - Highlights */}
+          <div className="flex flex-col justify-center space-y-6 lg:space-y-8">
+            <div className="border-l-4 border-[#FFD700] bg-[#1a1a1a] pl-6 py-6 pr-6 transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20">
+              <div className="text-4xl font-bold text-[#FFD700] lg:text-5xl">Full-Stack</div>
+              <div className="mt-2 text-lg font-semibold text-white lg:text-xl">React & Node.js</div>
+              <p className="mt-2 text-gray-300">
+                Développement d'applications web complètes, du frontend au backend.
+              </p>
+            </div>
+            <div className="border-l-4 border-[#FFD700] bg-[#1a1a1a] pl-6 py-6 pr-6 transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20">
+              <div className="text-4xl font-bold text-[#FFD700] lg:text-5xl">Backend</div>
+              <div className="mt-2 text-lg font-semibold text-white lg:text-xl">APIs & Bases de données</div>
+              <p className="mt-2 text-gray-300">
+                Conception d'APIs REST sécurisées et modélisation de données.
+              </p>
+            </div>
+            <div className="border-l-4 border-[#FFD700] bg-[#1a1a1a] pl-6 py-6 pr-6 transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20">
+              <div className="text-4xl font-bold text-[#FFD700] lg:text-5xl">Projets</div>
+              <div className="mt-2 text-lg font-semibold text-white lg:text-xl">Concrets & Déployés</div>
+              <p className="mt-2 text-gray-300">
+                Développement, déploiement et maintenance d'applications réelles.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

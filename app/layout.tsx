@@ -1,17 +1,27 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import { Inter, Space_Grotesk } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { Suspense } from "react"
 import "./globals.css"
+import { Suspense } from "react"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: "Amir Hjiri - Développeur Full-Stack",
-  description:
-    "Portfolio de Amir Hjiri, étudiant en génie logiciel spécialisé en développement web full-stack, DevOps et intelligence artificielle.",
-
+  title: "HJIRI Amir - Full Stack Developer",
+  description: "Développeur Full Stack passionné par les applications web modernes et l'intégration de modèles d'intelligence artificielle.",
 }
+
 
 export default function RootLayout({
   children,
@@ -19,10 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" className="dark">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+    <html lang="fr">
+      <body className={`font-sans ${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+        <Suspense fallback={null}>
+          {children}
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   )
