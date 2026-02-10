@@ -10,7 +10,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-base leading-relaxed text-gray-300 lg:text-lg">
               <p>
-                Je suis <strong className="text-white">Amir, Développeur Full Stack Junior</strong>, passionné par la création d'applications web modernes de A à Z.
+                Je suis <strong className="text-white">HJIRI Amir, Développeur Full Stack Junior</strong>, passionné par la création d'applications web modernes de A à Z.
                 Mon expérience à travers des projets concrets et du freelance m'a permis de me spécialiser dans le développement avec <strong className="text-white">React.js, Next.js, Node.js et Express.js</strong>.
               </p>
               <p>
